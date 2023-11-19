@@ -1,0 +1,270 @@
+header {
+  background: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  width: 100%;
+  padding: 1.6rem 1.6rem 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.circle {
+  background: #fff2;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.circle1 {
+  height: 12rem;
+  width: 12rem;
+  bottom: -10%;
+  right: 11rem;
+}
+
+.circle2 {
+  height: 26rem;
+  width: 26rem;
+  bottom: -3rem;
+  right: -8rem;
+}
+
+.wheelIcon img {
+  width: 90rem;
+  height: 90rem;
+  filter: invert(100%) blur(10px);
+  opacity: 0.05;
+  animation: rotate 15s linear infinite;
+  position: absolute;
+  z-index: -1;
+  bottom: -3rem;
+  right: -10rem;
+}
+
+.boxMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff4;
+  animation: slideTopDown 1s;
+}
+
+.imageLogo {
+  width: 4.8rem;
+}
+
+.imageLogo img {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  font-size: clamp(0.9rem, 2.5vw, 2rem);
+  white-space: nowrap;
+  text-shadow: 1px 1px 1px #0002;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+nav a:hover {
+  background: #fff2;
+}
+
+.containerSlogan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+}
+
+.boxSlogan {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.6rem;
+}
+
+.boxSlogan h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #0002;
+  animation: typing 3s 1s steps(25) both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.boxSlogan p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #0002;
+  animation: fadeIn 1s;
+}
+
+.boxSlogan button {
+  background: linear-gradient(#ffc44f, #cc9d3f);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 1.2rem;
+  width: 10rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #0004;
+  box-shadow: 1px 1px 2px #0002;
+  transition: filter 200ms, scale 200ms;
+  animation: pulse 1s 3.6s;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-delay: 3.6s;
+}
+
+.boxSlogan button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  scale: 1.01;
+}
+
+.boxImageSaleswoman img {
+  width: 14rem;
+  position: relative;
+  z-index: 1;
+  animation: slideRightLeft 1s;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2.4rem 2.4rem 0;
+  }
+
+  .circle1 {
+    height: 18rem;
+    width: 18rem;
+    bottom: -15%;
+    right: 15rem;
+  }
+
+  .circle2 {
+    height: 34rem;
+    width: 34rem;
+    bottom: -5rem;
+    right: -10rem;
+  }
+
+  .wheelIcon img {
+    width: 140rem;
+    height: 140rem;
+    animation: rotate 17s linear infinite;
+    bottom: -3rem;
+    right: -8rem;
+  }
+
+  .boxMenu {
+    border-bottom: 1.25px solid #fff4;
+  }
+
+  .imageLogo {
+    width: 6.4rem;
+  }
+
+  nav ul {
+    gap: 1.6rem;
+  }
+
+  .containerSlogan {
+    margin-top: 1.6rem;
+  }
+
+  .boxSlogan {
+    max-width: 48rem;
+    gap: 2rem;
+  }
+
+  .boxSlogan h1 {
+    font-size: 2.4rem;
+    animation: typing 4s 1s steps(35) both;
+  }
+
+  .boxSlogan p {
+    font-size: 1.6rem;
+  }
+
+  .boxSlogan button {
+    padding: 0.8rem;
+    width: 14rem;
+    font-size: 1.6rem;
+    animation: pulse 1s 3.1s;
+  }
+
+  .boxImageSaleswoman img {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle1 {
+    height: 24rem;
+    width: 24rem;
+    bottom: -20%;
+    right: 25rem;
+  }
+
+  .circle2 {
+    height: 48rem;
+    width: 48rem;
+    bottom: -10rem;
+    right: -10rem;
+  }
+
+  .wheelIcon img {
+    width: 190rem;
+    height: 190rem;
+    animation: rotate 20s linear infinite;
+    bottom: -3rem;
+    right: -8rem;
+  }
+
+  .boxMenu {
+    border-bottom: 1.5px solid #fff4;
+  }
+
+  .imageLogo {
+    width: 8.2rem;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  .containerSlogan {
+    margin-top: 2rem;
+  }
+
+  .boxSlogan {
+    max-width: 64rem;
+    gap: 2.4rem;
+  }
+
+  .boxSlogan h1 {
+    font-size: 3.2rem;
+    animation: typing 5s 1s steps(35) both;
+  }
+
+  .boxSlogan p {
+    font-size: 2rem;
+  }
+
+  .boxSlogan button {
+    padding: 1rem;
+    width: 18rem;
+    font-size: 2rem;
+    animation: pulse 1s 3.5s;
+  }
+
+  .boxImageSaleswoman img {
+    width: 24rem;
+  }
+}
